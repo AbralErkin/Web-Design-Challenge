@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body >
+  <nav class="navbar navbar-default my-navbar-padding">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+          </button>
+        <a class="navbar-brand my-nav-brand" href="index.html">Latitude</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="maxTemp.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="windSpeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="col-sm-11 main-box">
+            <h2 class="my-h2">Max Temperature</h2>
+            <hr>
+            <img class="img-responsive" src="resources/Lat_vs_MaxTemp.png" alt="Lat_vs_MaxTemp">
+            <br>
+            <p>This graph supporting the assumption that, Temperature will get higher when one it to the Equator.</p>
+      </div>
+      <div class="col-sm-1"></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="col-sm-12 image-box">
+          <h2 class="my-h2">Visualizations</h2>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="maxTemp.html"><img class="img-responsive my-active" src="resources/Lat_vs_MaxTemp.png" alt="Lat_vs_MaxTemp"></a>
+            </div>
+            <div class="col-sm-6">
+              <a href="humidity.html"><img class="img-responsive" src="resources/Lat_vs_Humidity.png" alt="Lat_vs_Humidity"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="cloudiness.html"><img class="img-responsive" src="resources/Lat_vs_Cloudiness.png" alt="Lat_vs_Cloudiness"></a>
+            </div>
+            <div class="col-sm-6">
+              <a href="windSpeed.html"><img class="img-responsive" src="resources/Lat_vs_WindSpeed.png" alt="Lat_vs_WindSpeed"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer navbar-fixed-bottom">
+    <div class="text-center">Trilogy Education Services © 2019. All Rights Reserved</div>
+  </div>
+</body>
+
+</html>
